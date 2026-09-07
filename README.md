@@ -1,6 +1,6 @@
 # Python for Astronomy
 
-Introductory Python workshops for Masters-level astronomy researchers, including students with little prior programming experience.
+Introductory Python workshops for astronomy researchers, including students with little prior programming experience.
 
 ## Workshops
 
