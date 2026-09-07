@@ -1,6 +1,6 @@
 # Python for Astronomy
 
-Introductory Python workshops for astronomy researchers, including students with little prior programming experience.
+Introductory Python workshops for Astronomy MSc students, University of Leeds, 2026-2027.
 
 ## Workshops
 
