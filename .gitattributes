@@ -1,0 +1,2 @@
+# FITS files contain binary scientific data.
+*.fits binary
