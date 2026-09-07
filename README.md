@@ -9,7 +9,7 @@ Work through the notebooks in order:
 1. [Getting started](Workshop_0_Getting_Started.ipynb): installation with pip or conda on Linux/macOS, Jupyter, Python basics, arrays, functions, plotting and debugging.
 2. [FITS files and plotting](Workshop_1_FITS_and_Plotting.ipynb): inspect astronomical images and metadata, choose display scaling, use celestial coordinates and save figures.
 3. [Units and coordinates](Workshop_2_Units_and_Coordinates.ipynb): physical quantities, coordinate transformations, angular separations and catalogue matching.
-4. [Modelling observations](Workshop_3_Variable_Star_Light_Curve_Modelling.ipynb): synthetic observations, sinusoidal fitting, residuals, period searches and phase folding.
+4. [Modelling observations](Workshop_3_Modelling_Observations.ipynb): synthetic observations, sinusoidal fitting, residuals, period searches and phase folding.
 
 ## Getting started
 
