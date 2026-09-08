@@ -6,29 +6,65 @@ Introductory Python workshops for Astronomy MSc students, University of Leeds, 2
 
 Work through the notebooks in order:
 
-1. [Getting started](Workshop_0_Getting_Started.ipynb): installation with pip or conda on Linux/macOS, Jupyter, Python basics, arrays, functions, plotting and debugging.
+1. [Getting started](Workshop_0_Getting_Started.ipynb): Jupyter, Python basics, arrays, functions, plotting and debugging.
 2. [FITS files and plotting](Workshop_1_FITS_and_Plotting.ipynb): inspect astronomical images and metadata, choose display scaling, use celestial coordinates and save figures.
 3. [Units and coordinates](Workshop_2_Units_and_Coordinates.ipynb): physical quantities, coordinate transformations, angular separations and catalogue matching.
 4. [Modelling observations](Workshop_3_Modelling_Observations.ipynb): synthetic observations, sinusoidal fitting, residuals, period searches and phase folding.
 
 ## Getting started
 
-Download this repository using **Code → Download ZIP** and extract it, or clone it with Git:
+### Load the Python environment
+
+It is assumed you are familiar with the Linux/Unix operating system and terminal environment.  If not, please revisit the [Linux/Unix tutorial](https://johnilee.github.io/UnixTutorial) before starting.
+
+On the Linux machines in Bragg 4.04, open a terminal and run:
 
 ```bash
-git clone https://github.com/johnilee/PythonForAstro.git
-cd PythonForAstro
+module load maps-condaenv
 ```
 
-Read the installation section of **Workshop 0** in GitHub's notebook preview before launching Jupyter. It provides complete pip and conda instructions for NumPy, Matplotlib, Astropy, SciPy, JupyterLab and ipykernel.
+This makes the workshop Python environment available in that terminal. Run it at the start of each new terminal session. No package installation or environment creation is needed.
 
-Launch JupyterLab from the repository folder with your workshop environment activated:
+A **Python environment** contains a Python interpreter and its installed packages. Check the Python made available by the module with these terminal commands:
 
 ```bash
+python -c "import sys; print(sys.executable)"
+python -c "import numpy, matplotlib, astropy, scipy, jupyterlab, ipykernel; print('All required packages are available.')"
+```
+
+The first command displays the Python executable's path. The second checks the packages needed for all four workshops. If an import fails, note the missing package and ask the demonstrator for help.
+
+| Package | Purpose |
+| --- | --- |
+| NumPy | Numerical arrays and calculations |
+| Matplotlib | Figures and image display |
+| Astropy | FITS files, units, coordinates and period searches |
+| SciPy | Curve fitting and catalogue-matching support |
+| JupyterLab | The browser interface used to open notebooks |
+| ipykernel | Runs Python code for Jupyter |
+
+`pathlib` and `sys`, used in the workshops, come with Python.
+
+**Run these commands in the terminal, not in a Python code cell.**
+
+### Download this repository
+
+To effectively run the workshop scripts you'll need to download the files to your workstation from this GitHub repository (or repo).  Replace `YOUR_USERNAME` below with your university username, then create a directory on the machine’s local storage and clone the repo:
+
+```bash
+mkdir -p /local/data/YOUR_USERNAME
+cd /local/data/YOUR_USERNAME
+git clone https://github.com/johnilee/PythonForAstro.git 
+```
+
+This will create a new directory called `PythonForAstro/` filled with the contents of this repo.  Keep the notebooks alongside the `data/` and `images/` folders. In the same terminal, change into this folder and start JupyterLab:
+
+```bash
+cd PythonForAstro
 python -m jupyterlab
 ```
 
-Keep the notebooks alongside the `data/` and `images/` folders so that relative paths work. Run cells in order and attempt the exercises. Before sharing completed work, restart the kernel and run all cells to check reproducibility.
+Open `Workshop_0_Getting_Started.ipynb` from JupyterLab's file browser. Keep the terminal running while you work. Follow the demonstrator's instructions for opening JupyterLab in your browser if needed.
 
 ## Data and images
 
