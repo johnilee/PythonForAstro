@@ -12,7 +12,7 @@ Work through the notebooks in order:
 
 Student editions of these notebooks contain blank exercise workspaces for your own analysis.
 
-Python fundamentals are introduced where each scientific task needs them. Each workshop imports its own packages and can be run in a fresh kernel. Workshop 1's contour and detailed layout examples are optional extensions after its final task.
+Python fundamentals are introduced where each scientific task needs them. Each workshop imports its own packages and can be run in a fresh kernel. Workshop 1 covers contours and colour-bar layout in its guided sequence before the final task.
 
 The [Python syntax reference](Python_Syntax_Reference.md) contains additional examples and practice; it is not a separate workshop.
 
