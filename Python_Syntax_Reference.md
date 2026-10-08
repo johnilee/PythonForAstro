@@ -140,11 +140,14 @@ print(squared_values)
 print(squared_compact)
 ```
 
-**Useful iteration patterns:** `range(n)` supplies integers from 0 through `n - 1`. `zip()` pairs entries from sequences; use matching lengths when each name should correspond to a measurement.
+**Useful iteration patterns:** `range(n)` supplies integers from 0 through `n - 1`. `enumerate()` supplies an index and an entry together, so you do not need to look the entry up by index. `zip()` pairs entries from sequences; use matching lengths when each name should correspond to a measurement.
 
 ```python
 for i in range(len(source_names)):
     print(i, source_names[i])
+
+for i, name in enumerate(source_names):
+    print(i, name)
 
 source_fluxes = np.array([0.98, 1.04, 1.10])
 for name, value in zip(source_names, source_fluxes):
