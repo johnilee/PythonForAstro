@@ -1,6 +1,6 @@
 # Python for Astronomy
 
-Introductory Python workshops for Astronomy MSc students, University of Leeds, 2026-2027.
+Introductory Python workshops for Astrophysics MSc students, University of Leeds, 2026-2027.
 
 ## Workshops
 
@@ -13,8 +13,6 @@ Work through the notebooks in order:
 Student editions of these notebooks contain blank exercise workspaces for your own analysis.
 
 Python fundamentals are introduced where each scientific task needs them. Each workshop imports its own packages and can be run in a fresh kernel. Workshop 1 covers contours and colour-bar layout in its guided sequence before the final task.
-
-The [Python syntax reference](Python_Syntax_Reference.md) contains additional examples and practice; it is not a separate workshop.
 
 ## Getting started
 
@@ -70,11 +68,3 @@ python -m jupyterlab
 ```
 
 Open `Workshop_1_FITS_and_Plotting.ipynb` from JupyterLab's file browser. Keep the terminal running while you work. Follow the demonstrator's instructions for opening JupyterLab in your browser if needed.
-
-## Updating an older copy
-
-The teaching materials now use three workshops and a fresh repository history. If you downloaded an earlier version, clone or download this repository into a new folder and keep your own completed work separately.
-
-## Data and images
-
-The FITS files used in Workshop 1 and the synthetic light-curve observations used in Workshop 3 are included in `data/`. Supporting illustrations are in `images/`; source acknowledgements appear in the notebooks and FITS metadata. Please retain these acknowledgements when reusing those materials.
